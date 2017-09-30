@@ -5,8 +5,37 @@
   </head>
   
   <style>
-    body{}
-    h1{}
-    p{}
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+      border: solid 1px black;
+      vertical-align:top;
+    }
+    .top {
+      height:100px;
+    }
+    .bot {
+      height:600px;
+    }
+    .left,.right{
+      display: inline-block;
+      width: 50%;
+      height: 600px;
+      box-sizing:border-box;
+    }
+    
   </style>
+
+  <div class="top"></div>
+  <div class="bot">
+    <div class="left">left</div>
+    <div class="right">right
+      <div class="rtop">rtop</div>
+      <div class="rmid">rmid</div>
+      <div class="rbot">rbot</div>
+    </div>
+  
+  </div>
+
+
+
 </html>
