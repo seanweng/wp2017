@@ -1,9 +1,14 @@
-
 <html>
-  <head>
-    <title>Ruei-Che Chang</title>
-  </head>
-  
+<head>
+<script src="/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".top").click(function(){
+    $(".bot").fadeIn();
+  });
+});
+</script>
+</head>
   <style>
     *{
       font-family: Arial;
@@ -27,6 +32,7 @@
     }
     .bot {
       height:600px;
+      display:none;
     }
     .left,.right{
       display:inline-block;
@@ -81,8 +87,8 @@
       line-height:25px;
     }
   </style>
-
-  <body>
+<body>
+<br><br>
   <div class="top">resume</div>
 
   <div class="bot">
@@ -119,5 +125,6 @@
     </div>
   
   </div>
-  </body>
+</body>
+
 </html>
